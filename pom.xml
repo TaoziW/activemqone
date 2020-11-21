@@ -93,13 +93,13 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-scratchpad</artifactId>
-            <version>3.8</version>
+            <version>3.15</version>
         </dependency>
         <!-- 对于docx格式的文档使用poi进行转换。依赖如下： -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-scratchpad</artifactId>
-            <version>3.8</version>
+            <version>3.15</version>
         </dependency>
         <!-- 对于docx格式的文档使用xdocreport进行转换。依赖如下： -->
         <dependency>
@@ -128,12 +128,12 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>3.8</version>
+            <version>3.15</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>3.8</version>
+            <version>3.15</version>
         </dependency>
 
         <!--Jxl使用方便，但功能相对POI比较弱,很多时候，一个软件应用程序需要生成Microsoft Excel文件格式的报告-->

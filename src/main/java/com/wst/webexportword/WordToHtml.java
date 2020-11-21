@@ -40,9 +40,10 @@ public class WordToHtml {
      */
     @Test
     public void Word2007ToHtml() throws IOException {
-        String filepath = "C:/test/";
-        String fileName = "滕王阁序2007.docx";
-        String htmlName = "滕王阁序2007.html";
+        //String filepath = "C:/test/";
+        String filepath = "D:/test/";
+        String fileName = "我的文件2.docx";
+        String htmlName = "我的文件2.html";
         final String file = filepath + fileName;
         File f = new File(file);
         if (!f.exists()) {
@@ -89,8 +90,8 @@ public class WordToHtml {
         //String filepath = "C:/test/";
         String filepath = "D:/test/";
         final String imagepath = "C:/test/image/";
-        String fileName = "滕王阁序2003.doc";
-        String htmlName = "滕王阁序2003.html";
+        String fileName = "我的文件.doc";
+        String htmlName = "我的文件.html";
         final String file = filepath + fileName;
         InputStream input = new FileInputStream(new File(file));
         HWPFDocument wordDocument = new HWPFDocument(input);
