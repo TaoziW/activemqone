@@ -1,12 +1,6 @@
 package com.wst.webexportword;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -67,11 +61,11 @@ public class WordToHtml {
                 XHTMLConverter.getInstance().convert(document, out, options);
 
                 //也可以使用字符数组流获取解析的内容
-//                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//                XHTMLConverter.getInstance().convert(document, baos, options);
-//                String content = baos.toString();
-//                System.out.println(content);
-//                 baos.close();
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                XHTMLConverter.getInstance().convert(document, baos, options);
+                String content = baos.toString();
+                System.out.println(content);
+                 baos.close();
             } else {
                 System.out.println("Enter only MS Office 2007+ files");
             }
